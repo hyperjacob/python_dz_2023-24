@@ -31,7 +31,7 @@ print(matrix_t(array))
 def dict_(**kwargs):
     newdict = {}
     for key, value in kwargs.items():
-        newdict[key] = value
+        newdict[str(value)] = key
     return newdict
 
 print(dict_(Moscow = 77, SanctPeterburg = 78, Tula = 71))
